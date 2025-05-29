@@ -2,5 +2,5 @@ services:
   - type: web
     name: alpha-quotation
     env: python
-    buildCommand: pip install flask reportlab
-    startCommand: python3 app.py
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
