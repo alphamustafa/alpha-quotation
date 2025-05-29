@@ -5,4 +5,4 @@ services:
     buildCommand: |
       pip install flask==3.1.1
       pip install reportlab==4.4.1
-    startCommand: gunicorn app:app
+    startCommand: python3 app.py
